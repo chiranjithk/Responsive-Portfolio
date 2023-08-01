@@ -441,6 +441,11 @@ h3{
   }  
 }
 
+.headtext {
+  position: relative;
+  margin-top: 40px;
+}
+
 .theme-btn .theme-in {
   display: flex;
   width: 20px;
