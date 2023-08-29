@@ -94,8 +94,10 @@ header {
   color: var(--theme-color);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .headtext div{
   font-size: 20px;
+  margin-top: 15px;
 }
 
 
@@ -302,21 +304,38 @@ width: 100%;
 .info-about{
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
-  height: 50vh;
-  width: 40vw;
+  height: 60vh;
+  width: 70vw;
   border-radius: 20px;
   color: var(--text-color);
+  -webkit-box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
+  -moz-box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
+  box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
 
 }
 
-.up-info{
+.left-info{
   height: 80%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.right-info{
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  justify-content: space-evenly;
+}
+
+.right-info h1{
+  text-shadow: 5px 5px 4px var(--theme-color);
+  color: white;
+}
+
 
 .tablegrid{
    height: 50%;
@@ -643,6 +662,53 @@ width: 100%;
 @media (max-width:1200px) {
   .tlhead{
      display: none;
+  }
+}
+
+
+@media (max-width:1400px) {
+  .info-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 70vw;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+    -webkit-box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
+    -moz-box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
+    box-shadow: 12px 0px 40px -5px rgba(57,65,87,0.39);
+    gap: 100px;
+  
+  }
+  
+  .left-info{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-info{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: -20px;
+    justify-content: space-evenly;
+  }
+  
+  .right-info h1{
+    margin-bottom: 50px;
+    text-shadow: 5px 5px 4px var(--theme-color);
+    color: white;
+
   }
 }
 
